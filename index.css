@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+body{
+    background-color:beige;
+    border:0;
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+}
+.navigation{
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(29, 29, 71);
+    overflow-x: hidden;
+    padding-top: 20px;
+    transition: 0.5s;
+
+}
+.navigation a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: lightblue;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Edu VIC WA NT Beginner';
+}
+.navigation a:hover {
+    color: orangered;
+}
+/* .sidebar .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+transition: 0.5s;
+position: fixed;
+} */
+.openbtn {
+    position: sticky;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0);
+    color: orangered;
+    padding: 10px 15px;
+    border: none;
+    transition: 0.5s;
+    top: 0;
+}
+.openbtn:hover {
+    /* background-color: #444; */
+    color: lightblue;
+}
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    /* transition: margin-right .5; */
+    /* padding: 20px; */
+    margin-right: 100px;
+}
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100vw - margin-left);
+    /* padding: 50px; */
+}
+.hello{
+    position: relative;
+    left: 200px;
+    font-size: 100px;
+    font-family: 'Edu VIC WA NT Beginner';
+    font-weight: strong;
+
+    color: rgb(182, 159, 132);
+}
+.i-am{
+    position: relative;
+    left: 355px;
+    font-size: 100px;
+    font-family: 'Edu VIC WA NT Beginner';
+    color: rgb(182, 159, 132);
+}
+.first-name{
+    position: relative;
+    padding-right:125;
+    left: calc(100vw - 525px);
+    margin-right: 30px;
+    width: 400px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 125px;
+    color: rgb(183, 46, 8);
+    height: 125px;
+}
+.last-name{
+    position: relative;
+    left: calc(100vw - 400px);
+    font-family: 'Jost', sans-serif;
+    font-size: 75px;
+    color: rgb(227, 126, 158);
+    height: 70;
+}
+.skills-bg{
+    color:lightpink;
+    background-image:url("stare.jpg");
+    background-position:center center;
+    height:300px;
+    padding: 50px;
+    margin-top:50px;
+}
