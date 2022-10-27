@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+body::-webkit-scrollbar{
+    width:15px;
+    background-color: rgb(18, 18, 37);
+}
+body::-webkit-scrollbar-thumb{
+    width: 15px;
+    background-color: orangered;
+}
 body{
     background-color:beige;
-    border:0;
     margin:0;
-    width: 100vw;
-    height: 100vh;
+    width: calc(100vw - 3px);
+    overflow-x:hidden
 }
 .navigation{
     height:100%;
@@ -33,15 +40,6 @@ body{
 .navigation a:hover {
     color: orangered;
 }
-/* .sidebar .closebtn {
-position: absolute;
-top: 0;
-right: 25px;
-font-size: 36px;
-margin-left: 50px;
-transition: 0.5s;
-position: fixed;
-} */
 .openbtn {
     position: sticky;
     font-size: 50px;
@@ -100,7 +98,7 @@ position: fixed;
 .last-name{
     position: relative;
     left: calc(100vw - 400px);
-    font-family: 'Jost', sans-serif;
+    font-family: 'Georgia';
     font-size: 75px;
     color: rgb(227, 126, 158);
     height: 70;
@@ -109,7 +107,77 @@ position: fixed;
     color:lightpink;
     background-image:url("stare.jpg");
     background-position:center center;
+    background-size: cover;
     height:300px;
     padding: 50px;
     margin-top:50px;
+    width: 100vw;
+}
+.single-exp h1{
+    font-size: 30px;
+    font-family: "Georgia";
+    margin-bottom: 0;
+}
+.single-exp h2{
+    font-size: 25px;
+    font-family: 'Edu VIC WA NT Beginner';
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.single-exp h3{
+    font-size: 20px;
+    font-family: 'Edu VIC WA NT Beginner';
+    margin-bottom: 0;
+    margin-top: 1;
+}
+.single-exp li{
+    font-size: 20px;
+    font-family: "Helvetica";
+    margin-bottom: 15px;
+    color: rgb(18, 18, 37);
+}
+.all-exp{
+    position: relative;
+    margin: 100px 45px 100px 30px;
+    /* margin-right: 50px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px;
+    width: calc(100vw - margin-left);
+    background-color: rgb(245, 245, 235);
+    justify-content: center;
+
+}
+.exp-bg{
+    position: absolute;
+    font-size: 230px;
+    top: -200px;
+    left: -45px;
+    bottom: 0;
+    z-index: -1;
+    color: lightblue;
+}
+#homeinst{
+    transition: margin-left .5s;
+}
+#simplytut{
+    transition: margin-left .5s;
+}
+.single-exp{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /* align-items: flex-start; */
+    /* left: calc(); */
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.work-layout{
+    width: 15vw
+}
+.list-layout{
+    width: 60vw;
+    padding-top: 25px;
 }

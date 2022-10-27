@@ -7,6 +7,8 @@ function openNav() {
         document.getElementById("poop").style.marginLeft = "125px";
         // document.getElementById("main").style.marginRight = "50px";
         document.getElementById("poop").style.transform = "rotate(180deg)";
+        document.getElementById("homeinst").style.marginLeft = "110px";
+        document.getElementById("simplytut").style.marginLeft = "110px";
         open = true;
     }else{
         closeNav();
@@ -21,5 +23,7 @@ function openNav() {
     document.getElementById("the-navbar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
     document.getElementById("poop").style.marginLeft = "0";
+    document.getElementById("homeinst").style.marginLeft = "0";
+    document.getElementById("simplytut").style.marginLeft = "0";
     document.getElementById("poop").style.transform = "rotate(0deg)" 
   }

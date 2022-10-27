@@ -7,7 +7,7 @@
 
     </head>
     <body>
-        <div id="main">
+        <div id="main" style="width: 100vw">
             <button id="poop" class="openbtn" onclick="openNav()">➤</button>  
             <section class="intro">
                 <div id="introduction" class="welcome">
@@ -17,21 +17,54 @@
                     <div class="last-name">Pascual</div>
                 </div>
             </section>
-          </div>
+            <section class="skills">
+                <div id="current-skills" class="skills-bg">test text</div>
+            </section>
+            <section class="exp">
+                <div id="my-experience" class="all-exp">
+                    <div class="exp-bg"> EXPERIENCE</div>
+                        <div id=homeinst class="single-exp">
+                            <div class=work-layout>
+                                <h1>Home Instead</h1>
+                                <h2>In-Home Caregiver</h2>
+                                <h3>June 2022-present</h3>
+                            </div>
+                            <div class="list-layout">
+                                <ul >
+                                    <li>Ensured proper communication with and safety of family members and their clients to stay well-informed about medical information, daily care requirements, and other needs</li>
+                                    <li>Customized care-taking methods required to meet and exceed clients' special needs</li>
+                                    <li>Provided companionship and created conversation with clients to create a strong rapport</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id=simplytut class="single-exp">
+                            <div class=work-layout>
+                                <h1>Simply Tutoring</h1>
+                                <h2>Math Tutor</h2>
+                                <h3>Jan 2021-May 2022</h3>
+                            </div>
+                            <div class="list-layout">
+                                <ul >
+                                    <li>Integrated an adaptive standard which allowed organizing a work schedule that changed frequently in order to satisfy client’s needs
+                                    </li>
+                                    <li>Prepared for and adjusted to each students’ unique needs and learning styles to create successful and custom learning environments that improved their grades</li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </section>
+        </div>
         <section>
             <div id="the-navbar" class="navigation">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
-                <a href="#introduction">Welcome</a>
-                <a href="#">Skills</a>
-                <a href="#">Expeience</a>
+                <a href="#main">Welcome</a>
+                <a href="#current-skills">Skills</a>
+                <a href="#my-experience">Expeience</a>
                 <a href="#">About</a>
                 <a href="#">Portfolio</a>
                 <a href="#">Contact</a>
             </div>
         </section>
 
-        <section class="skills">
-            <div class="skills-bg">test text</div>
-        </section>
     </body>
 </html>
